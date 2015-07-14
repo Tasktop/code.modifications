@@ -6,7 +6,7 @@
 
 ##### Firefox XML-RPC Client (nsXmlRpcClient.js)
 
-[Source](https://my.tasktop.com/legal/patches/mpl-firefox/nsXmlRpcClient.js.txt)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/mozilla/nsXmlRpcClient.js)<br>
 [Mozilla Public License 1.1](http://www.mozilla.org/MPL/MPL-1.1.html)
 
 ### Eclipse Patches & Modifications
@@ -31,19 +31,19 @@
 
 ##### org.eclipse.core.resources (3.7.100.v20110510-0712)
 
-[Modified Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.core.resources/org.eclipse.core.resources_3.7.100.v20110510-0712.zip)<br>
+[Modified Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/eclipse/org.eclipse.core.resources_3.7.100.v20110510-0712.zip)<br>
 [About](http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.core.resources/about.html)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
 ##### org.eclipse.core.resources (3.6.0.v20100526-0737)
 
-[Modified Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.core.resources/org.eclipse.core.resources_3.6.0.v20100526-0737.zip)<br>
+[Modified Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/eclipse/org.eclipse.core.resources_3.6.0.v20100526-0737.zip)<br>
 [About](http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.core.resources/about.html)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
 ##### org.eclipse.core.resources (3.5.2.R35x_v20091203-1236)
 
-[Modified Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.core.resources/org.eclipse.core.resources_3.5.2.R35x_v20091203-1236.zip)<br>
+[Modified Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/eclipse/org.eclipse.core.resources_3.5.2.R35x_v20091203-1236.zip)<br>
 [About](http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.core.resources/about.html)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
@@ -131,38 +131,38 @@
 
 ### Atlassian Eclipse JIRA Connector EPL Code
 
-#### com.atlassian.connector 3.0.6.11</h4>
+#### com.atlassian.connector 3.0.6.11
 com.atlassian.connector.eclipse.branding.ui<br/>
 com.atlassian.connector.eclipse.commons.core<br/>
 com.atlassian.connector.eclipse.commons.ui<br/>
 com.atlassian.connector.eclipse.jira.core<br/>
 com.atlassian.connector.eclipse.jira.ui<br/>
 
-[Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/com.atlassian.connector.eclipse.jira/com.atlassian.connector-3.0.6.11.zip)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/jira/com.atlassian.connector-3.0.6.11.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
-#### com.atlassian.connector 3.0.6.15</h4>
+#### com.atlassian.connector 3.0.6.15
 com.atlassian.connector.eclipse.jira.core<br/>
 com.atlassian.connector.eclipse.jira.ui
 
-[Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/com.atlassian.connector.eclipse.jira/com.atlassian.connector-3.0.6.15.zip)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/jira/com.atlassian.connector-3.0.6.15.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
-#### com.atlassian.connector 3.0.6.16</h4>
+#### com.atlassian.connector 3.0.6.16
 com.atlassian.connector.eclipse.jira.core<br/>
 com.atlassian.connector.eclipse.jira.ui
 
-[Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/com.atlassian.connector.eclipse.jira/com.atlassian.connector-3.0.6.16.zip)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/jira/com.atlassian.connector-3.0.6.16.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
-#### com.atlassian.connector 3.0.6.17</h4>
+#### com.atlassian.connector 3.0.6.17
 com.atlassian.connector.eclipse.jira.core<br/>
 com.atlassian.connector.eclipse.jira.ui
 
 [Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/com.atlassian.connector.eclipse.jira/com.atlassian.connector-3.0.6.17.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
-#### com.atlassian.connector 3.0.6.18</h4>
+#### com.atlassian.connector 3.0.6.18
 com.atlassian.connector.eclipse.jira.core<br/>
 com.atlassian.connector.eclipse.jira.ui
 
@@ -173,17 +173,17 @@ com.atlassian.connector.eclipse.jira.ui
 
 ##### Tasktop Base Application
 
-[Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/epl-other/com.tasktop.base.application.ui_1.1.2.zip)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.base.application.ui_1.1.2.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
 ##### Tasktop EPL Commons
 
-[Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/epl-other/com.tasktop.epl.commons.core_3.0.0.zip)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.epl.commons.core_3.0.0.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
 ##### Eclipse EPF
 
-[Source](http://tasktop.devcloud.acquia-sites.com/legal/patches/epl-other/com.tasktop.org.eclipse.epf_1.2.5.zip)<br>
+[Source](https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.org.eclipse.epf_1.2.5.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
 ##### Mylyn - FillWidthLayout
