@@ -9,11 +9,40 @@
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,300,400italic,300italic">
 
+  <style type="text/css" media="all">
+  @import url("http://tasktop.com/modules/system/system.base.css?nqv63x");
+  @import url("http://tasktop.com/modules/system/system.menus.css?nqv63x");
+  @import url("http://tasktop.com/modules/system/system.messages.css?nqv63x");
+  @import url("http://tasktop.com/modules/system/system.theme.css?nqv63x");
+  </style>
+  <style type="text/css" media="all">
+  @import url("http://tasktop.com/modules/comment/comment.css?nqv63x");
+  @import url("http://tasktop.com/sites/all/modules/date/date_api/date.css?nqv63x");
+  @import url("http://tasktop.com/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?nqv63x");
+  @import url("http://tasktop.com/modules/field/theme/field.css?nqv63x");
+  @import url("http://tasktop.com/modules/node/node.css?nqv63x");
+  @import url("http://tasktop.com/modules/search/search.css?nqv63x");
+  @import url("http://tasktop.com/modules/user/user.css?nqv63x");
+  @import url("http://tasktop.com/sites/all/modules/views/css/views.css?nqv63x");
+  </style>
+  <style type="text/css" media="all">
+  @import url("http://tasktop.com/sites/all/modules/ctools/css/ctools.css?nqv63x");
+  </style>
+  <style type="text/css" media="all">
+  @import url("http://tasktop.com/sites/all/themes/tasktop/ux/css/main.css?nqv63x");
+  </style>
+  <script src="jquery-1.11.3.min.js"></script>
+  <script>
+  function scrollToElement(element) {
+    var target = document.getElementById(element);
+    target.scrollIntoView();
+  }
+  </script>
+
   <title>Tasktop Code Patches &amp; Modifications</title>
 </head>
 
 <body>
-
   <!-- HEADER -->
   <div id="header_wrap" class="outer">
     <header class="inner">
@@ -21,33 +50,323 @@
       <img id="symbol" src="images/symbol.png" height="100" width="324">
     </header>
   </div>
-  <div id="divider" class="outer"></div>
+  <div id="divider" class="outer">
+    <section class="inner">
+      <a id="toc" href="#" onClick="scrollToElement('home');">HOME</a>
+      <a id="toc" href="#" onClick="scrollToElement('mozilla');">MOZILLA</a>
+      <a id="toc" href="#" onClick="scrollToElement('jira');">JIRA</a>
+      <a id="toc" href="#" onClick="scrollToElement('eclipse');">ECLIPSE</a>
+      <a id="toc" href="#" onClick="scrollToElement('epl');">EPL</a>
+    </section>
+  </div>
 
   <!-- MAIN CONTENT -->
   <div id="main_content_wrap" class="outer">
-    <section id="main_title" class="inner">
-      <h1>Code Patches &amp; Modifications</h1>
-    </section>
     <section id="main_content" class="inner">
 
-      <a id="header_title" href="mozilla.html">Mozilla Patches &amp; Modifications</a>
+      <h1 id="home" class="page_header">Code Patches &amp; Modifications</h1>
       <br/><br/>
-      <a id="header_title" href="eclipse.html">Eclipse Patches &amp; Modifications</a>
-      <br/><br/>
-      <a id="header_title" href="epl.html">Other EPL Code</a>
-      <br/><br/>
-      <a id="header_title" href="jira.html">Atlassian Eclipse JIRA Connector EPL Code</a>
+      <h2 id="mozilla" class="page_h2">Mozilla Patches &amp; Modifications</h2>
+      <br/>
+      <h5 class="page_h5">Firefox XML-RPC Client (nsXmlRpcClient.js)</h5>
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/mozilla/nsXmlRpcClient.js">Source</a><br/>
+      <a id="custom_a" href="http://www.mozilla.org/MPL/MPL-1.1.html">Mozilla Public License 1.1</a>
 
+      <br/><br/>
+      <h2 id="jira" class="page_h2">Atlassian Eclipse JIRA Connector EPL Code</h2>
+
+      <h4 class="page_h4">com.atlassian.connector 3.0.6.11</h4>
+
+      <h5 class="page_h5">com.atlassian.connector.eclipse.branding.ui<br/>
+        com.atlassian.connector.eclipse.commons.core<br/>
+        com.atlassian.connector.eclipse.commons.ui<br/>
+        com.atlassian.connector.eclipse.jira.core<br/>
+        com.atlassian.connector.eclipse.jira.ui
+      </h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/jira/com.atlassian.connector-3.0.6.11.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h4 class="page_h4">com.atlassian.connector 3.0.6.15</h4>
+
+      <h5 class="page_h5">com.atlassian.connector.eclipse.jira.core<br/>
+        com.atlassian.connector.eclipse.jira.ui
+      </h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/jira/com.atlassian.connector-3.0.6.15.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h4 class="page_h4">com.atlassian.connector 3.0.6.16</h4>
+
+      <h5 class="page_h5">com.atlassian.connector.eclipse.jira.core<br/>
+        com.atlassian.connector.eclipse.jira.ui
+      </h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/jira/com.atlassian.connector-3.0.6.16.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h4 class="page_h4">com.atlassian.connector 3.0.6.17</h4>
+
+      <h5 class="page_h5">com.atlassian.connector.eclipse.jira.core<br/>
+        com.atlassian.connector.eclipse.jira.ui
+      </h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/jira/com.atlassian.connector-3.0.6.17.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h4 class="page_h4">com.atlassian.connector 3.0.6.18</h4>
+
+      <h5 class="page_h5">com.atlassian.connector.eclipse.jira.core<br/>
+        com.atlassian.connector.eclipse.jira.ui
+      </h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/jira/com.atlassian.connector-3.0.6.18.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <br/><br/>
+
+      <h2 id="eclipse" class="page_h2">Eclipse Patches &amp; Modifications</h1>
+
+
+      <h5 class="page_h5">org.eclipse.birt.chart.device.swt(2.3.1.v20080731)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.birt.chart.device.swt_2.3.1.v20080731.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.birt.chart.device.swt/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.birt.chart.device.swt (2.2.2.r222_v20071023)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.birt.chart.device.swt_2.2.2.r222_v20071023.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.birt.chart.device.swt/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.core.resources.win32 (3.3.0v.20070226)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.core.resources.win32_3.3.0.v20070226.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.core.resources.win32/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.core.resources (3.7.100.v20110510-0712)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/eclipse/org.eclipse.core.resources_3.7.100.v20110510-0712.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.core.resources/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.core.resources (3.6.0.v20100526-0737)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/eclipse/org.eclipse.core.resources_3.6.0.v20100526-0737.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.core.resources/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.core.resources (3.5.2.R35x_v20091203-1236)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/eclipse/org.eclipse.core.resources_3.5.2.R35x_v20091203-1236.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.core.resources/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.core.resources (3.4.1.R34x_v20080902)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.core.resources_3.4.1.R34x_v20080902.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.core.resources/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.core.resources (3.4.0.v20071210)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.core.resources_3.4.0.v20071210.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.core.resources/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.epf.common (1.2.0.v20100310)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.epf.common_1.2.0.v20100310.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.epf.common/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.epf.richtext (1.2.0.v20100310)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.epf.richtext_1.2.0.v20100310.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.epf.richtext/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.epf.ui (1.2.0.v20100310)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.epf.ui_1.2.0.v20100310.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.epf.ui/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.swt.carbon.macosx (3.4.1.v3449c)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.swt.carbon.macosx_3.4.1.v3449c.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.swt.carbon.macosx/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a><br>
+      <a id="custom_a" href="http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.swt.carbon.macosx/about_files/IJG_README">The Independent JPEG Group's JPEG software</a><br>
+      <a id="custom_a" href="http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.swt.carbon.macosx/about_files/mpl-v11.txt">Mozilla Public License 1.1</a>
+
+      <h5 class="page_h5">org.eclipse.swt.win32.win32.x86 (3.3.0v.3346)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.swt.win32.win32.x86_3.3.0.v3346.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.swt.win32.win32.x86/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a><br>
+      <a id="custom_a" href="http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.swt.carbon.macosx/about_files/IJG_README">The Independent JPEG Group's JPEG software</a><br>
+      <a id="custom_a" href="http://tasktop.devcloud.acquia-sites.com/legal/patches/org.eclipse.swt.carbon.macosx/about_files/mpl-v11.txt">Mozilla Public License 1.1</a>
+
+      <h5 class="page_h5">org.eclipse.ui.ide (3.7.0.I20110519-0100)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.ui.ide_3.7.0.I20110519-0100.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.ui.ide/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.ui.ide (3.6.0.I20100601-0800)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.ui.ide_3.6.0.I20100601-0800.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.ui.ide/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.ui.ide (3.5.2.M20100113-0800)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.ui.ide_3.5.2.M20100113-0800.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.ui.ide/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.ui.ide (3.4.1.M20080903-2000)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.ui.ide_3.4.1.M20080903-2000.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.ui.ide/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.ui.ide (3.3.2.M20080207-0800)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.ui.ide_3.3.2.M20080207-0800.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.ui.ide/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">org.eclipse.ui.ide (3.3.1M20070910-0800b)</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.ui.ide_3.3.1.M20070910-0800b.zip">Modified Source</a><br>
+      <a id="custom_a" href="https://my.tasktop.com/legal/patches/org.eclipse.ui.ide/about.html">About</a><br>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <br/><br/>
+
+      <h2 id="epl" class="page_h2">Other EPL Code</h2>
+
+      <h5 class="page_h5">Tasktop Base Application</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.base.application.ui_1.1.2.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Tasktop EPL Commons</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.epl.commons.core_3.0.0.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Eclipse EPF</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.org.eclipse.epf_1.2.5.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - FillWidthLayout</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/FillWidthLayout.java">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - HTTP Commons</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/com.tasktop.mylyn.commons.http.core_1.0.3.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - HtmlStreamTokenizer</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/HtmlStreamTokenizer_m3_8.java">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - HtmlTag</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/HtmlTag_m3_8.java">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - OSLC</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/com.tasktop.mylyn.oslc_3.11.0.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - SOAP Commons</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/com.tasktop.mylyn.commons.soap_3.11.0.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - TaskEditorPeoplePart</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/MingleTaskEditorPeoplePart.java">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - TaskDataDiff</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/SyncTaskDataDiff.zip">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
+
+      <h5 class="page_h5">Mylyn - TaskAttributeDiff</h5>
+
+      <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/SyncTaskAttributeDiff.java">Source</a><br/>
+      <a id="custom_a" href="http://www.eclipse.org/legal/epl-v10.html">Eclipse Public License 1.0</a>
     </section>
   </div>
 
   <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-    <footer class="inner">
-      <p class="copyright"><br/>Tasktop Code Patches &amp; Modifications maintained by <a href="https://github.com/Tasktop">Tasktop</a><br/><br/>
-        Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-    </footer>
-  </div>
+  <footer class="primary-footer">
+    <div class="content">
+      <div class="blocks">
+        <div id="block-block-1" class="block block-block contact-block">
+          <h3>Tasktop</h3>
 
+          <address>
+            Tasktop Technologies Global HQ<br>
+            1100 -1500 West Georgia St.<br>
+            Vancouver, BC V6G 2Z6<br>
+            Canada<br>
+          </address>
+          <p><a id="custom_a" href="http://go.tasktop.com/contact-us">Contact Us</a><br>
+            Inquiries: <a id="custom_a" href="mailto:info@tasktop.com">info@tasktop.com</a><br>
+            Support: <a id="custom_a" href="mailto:support@tasktop.com">support@tasktop.com</a>
+          </p>
+        </div>
+        <div id="block-menu-block-2" class="block block-menu-block bulleted-list-menu">
+          <h3>Menu</h3>
+
+          <div class="menu-block-wrapper menu-block-2 menu-name-main-menu parent-mlid-0 menu-level-1">
+            <ul class="menu"><li class="first leaf has-children menu-mlid-413"><a id="custom_a" href="http://www.tasktop.com/products">Products</a></li>
+              <li class="leaf menu-mlid-414"><a id="custom_a" href="http://www.tasktop.com/integrations">Integrations</a></li>
+              <li class="leaf has-children menu-mlid-415"><a id="custom_a" href="http://www.tasktop.com/insights">Insights</a></li>
+              <li class="leaf has-children menu-mlid-416"><a id="custom_a" href="http://www.tasktop.com/partners">Partners</a></li>
+              <li class="leaf has-children menu-mlid-417"><a id="custom_a" href="http://www.tasktop.com/resources-overview">Resources</a></li>
+              <li class="last leaf has-children menu-mlid-418"><a id="custom_a" href="http://www.tasktop.com/company">Company</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="block-views-blog-block-1" class="block block-views">
+          <h3>Support</h3>
+          <div class="menu-block-wrapper menu-block-3 menu-name-menu-support-menu parent-mlid-0 menu-level-1">
+            <ul class="menu"><li class="first leaf menu-mlid-504"><a id="custom_a" href="https://dev-support.tasktop.com/" class="tasktop-dev" target="_blank">Tasktop Dev Support</a></li>
+              <li class="leaf menu-mlid-505"><a id="custom_a" href="https://sync-support.tasktop.com/" class="tasktop-sync" target="_blank">Tasktop Sync Support</a></li>
+              <li class="last leaf menu-mlid-506"><a id="custom_a" href="https://data-support.tasktop.com/" class="tasktop-data" target="_blank">Tasktop Data Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">Copyright 2015</div>
+      <ul class="menu legal-menu"><li class="menu-517 first last"><a id="custom_a" href="http://www.tasktop.com/privacy">Privacy Policy</a></li>
+      </ul>
+      <ul id="social" class="menu social-menu">
+        <li class="menu-508 first"><a id="custom_a" href="https://www.facebook.com/Tasktop" class="facebook" target="_blank">Facebook</a></li>
+        <li class="menu-509"><a id="custom_a" href="https://www.linkedin.com/company/tasktop-technologies" class="linkedin" target="_blank">LinkedIn</a></li>
+        <li class="menu-510"><a id="custom_a" href="http://feeds.feedburner.com/tasktop" class="rss" target="_blank">RSS Feed</a></li>
+        <li class="menu-511"><a id="custom_a" href="https://twitter.com/tasktop" class="twitter" target="_blank">Twitter</a></li>
+        <li class="menu-512"><a id="custom_a" href="https://www.youtube.com/user/Tasktop" class="youtube" target="_blank">YouTube</a></li>
+        <li class="menu-513"><a id="custom_a" href="http://www.slideshare.net/tasktop" class="slideshare" target="_blank">Slideshare</a></li>
+        <li class="menu-514"><a id="custom_a" href="http://www.tasktop.com/blog" class="blog">Blog</a></li>
+        <li class="menu-515 last"><a id="custom_a" href="http://go.tasktop.com/contact-us" class="email">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>

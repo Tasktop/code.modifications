@@ -35,8 +35,8 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-ol, ul {
-  list-style: none;
+ol, ul, li {
+  list-style-type: none !important;
 }
 
 table {
@@ -73,7 +73,6 @@ h1 {
 h2 {
   padding-bottom: 10px;
   font-size: 32px;
-  background: url('../images/bg_hr.png') repeat-x bottom;
 }
 
 h3 {
@@ -116,10 +115,10 @@ a {
 
 a:hover, a:focus { color: #82BC00; text-decoration: none;}
 
-footer a {
-  color: #58585B;
-  text-decoration: none;
-}
+/*footer a {
+color: #58585B;
+text-decoration: none;
+}*/
 
 em {
   font-style: italic;
@@ -162,10 +161,14 @@ Full-Width Styles
   opacity: 0.4;
 }
 
+#logo {
+  padding-top: 10px;
+}
+
 
 #main_content_wrap {
   background: #58585B;
-  height: 81%;
+  height: 75%;
   position: relative;
   overflow: auto;
 }
@@ -178,27 +181,76 @@ Full-Width Styles
 #footer_wrap {
   background: #FFFFFF;
   position: static;
-  height: 120px;
+  bottom: 0;
+  height: 100px;
 }
 
 #divider {
-  height: 20px;
+  height: 32px;
   background: #82BC00;
 }
 
-#header_title {
-  font-size: 30px;
-}
-
-#home_link {
-  color: #FFFFFF;
-  float: right;
-  font-weight: 400;
+#custom_a {
+  text-decoration: none;
+  color: #BBBDC0;
+  text-shadow: none;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   transition: all 250ms ease-in-out 0s;
 }
 
-#home_link:hover {
+#custom_a:hover {
+  color: #82BC00;
+}
+
+#toc {
+  color: #FFFFFF;
+  font-weight: 300;
+  transition: all 250ms ease-in-out 0s;
+  padding-right: 15px;
+}
+
+#toc:hover {
   color: #58585B;
+}
+
+.page_header {
+  margin: 10px 0;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 46px;
+  font-weight: 400;
+}
+
+.page_h2 {
+  margin: 10px 0;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.page_h4 {
+  margin: 10px 0;
+  font-size: 21px;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+}
+
+.page_h5 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+}
+
+#social {
+  float: none;
 }
 
 
