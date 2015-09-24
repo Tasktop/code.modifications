@@ -169,6 +169,13 @@ com.atlassian.connector.eclipse.jira.ui
 [Source](https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/jira/com.atlassian.connector-3.0.6.18.zip)<br>
 [Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
 
+#### com.atlassian.connector 3.0.6 (Tasktop Sync and Dev 4.4)
+com.atlassian.connector.eclipse.jira.core<br/>
+com.atlassian.connector.eclipse.jira.ui
+
+[Source](https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/jira/com.atlassian.connector-3.0.6.2015.zip)<br>
+[Eclipse Public License 1.0](http://www.eclipse.org/legal/epl-v10.html)
+
 ### Other EPL Code
 
 ##### Tasktop Base Application
