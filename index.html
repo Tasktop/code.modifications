@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
   <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:400,300,400italic,300italic">
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/vnd.microsoft.icon">
 
   <style type="text/css" media="all">
   @import url("http://tasktop.com/modules/system/system.base.css?nqv63x");
@@ -39,12 +40,23 @@
   <title>Tasktop Code Patches &amp; Modifications</title>
 </head>
 
-<body id="home">
+<body>
 
 <script>
-function scrollToElement(element) {
-  $('html,body').animate({ scrollTop: $("#" + element).offset().top }, 750);
-}
+$(document).ready(function() {
+  $(function () {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 750);
+          return false;
+        }
+    });
+  });
+});
 </script>
 
 <!-- HEADER -->
@@ -61,18 +73,18 @@ function scrollToElement(element) {
 <div id="main_content_wrap" class="outer">
   <section id="main_content" class="inner">
 
-    <h1 class="page_header">Code Patches &amp; Modifications</h1>
-    <a id="toc" onClick="scrollToElement('mozilla');">Mozilla Patches &amp; Modifications</a>
+    <h1 id="top" class="page_header">Code Patches &amp; Modifications</h1>
+    <a id="toc" href="#mozilla">Mozilla Patches &amp; Modifications</a>
     &bull;
-    <a id="toc" onClick="scrollToElement('jira');">Atlassian Eclipse JIRA Connector EPL Code</a>
+    <a id="toc" href="#jira">Atlassian Eclipse JIRA Connector EPL Code</a>
     &bull;
-    <a id="toc" onClick="scrollToElement('eclipse');">Eclipse Patches &amp; Modifications</a>
+    <a id="toc" href="#eclipse">Eclipse Patches &amp; Modifications</a>
     &bull;
-    <a id="toc" onClick="scrollToElement('epl');">Other EPL Code</a>
+    <a id="toc" href="#epl">Other EPL Code</a>
     <hr>
     <br/>
     <h2 id="mozilla" class="page_h2">Mozilla Patches &amp; Modifications</h2>
-    <a class="home" onClick="scrollToElement('home');">TOP</a>
+    <a class="home" href="#top">TOP</a>
     <br/>
     <h5 class="page_h5">Firefox XML-RPC Client (nsXmlRpcClient.js)</h5>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/mozilla/nsXmlRpcClient.js">Source</a><br/>
@@ -80,7 +92,7 @@ function scrollToElement(element) {
 
     <br/><br/>
     <h2 id="jira" class="page_h2">Atlassian Eclipse JIRA Connector EPL Code</h2>
-    <a class="home" onClick="scrollToElement('home');">TOP</a>
+    <a class="home" href="#top">TOP</a>
 
     <h4 class="page_h4">com.atlassian.connector 3.0.6.11</h4>
 
@@ -139,10 +151,17 @@ function scrollToElement(element) {
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/ee791275a92159c663790c97889278b561927d7c/src/jira/com.atlassian.connector-3.0.6.2015.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
+    <h4 class="page_h4">com.atlassian.connector 3.0.6 (Tasktop Sync and Dev 4.7)</h4>
+
+    <h5 class="page_h5">com.atlassian.connector.eclipse.jira.core</h5>
+
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/jira/com.atlassian.connector-3.0.6.20160708.zip">Source</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
+
     <br/><br/>
 
     <h2 id="eclipse" class="page_h2">Eclipse Patches &amp; Modifications</h2>
-    <a class="home" onClick="scrollToElement('home');">TOP</a>
+    <a class="home" href="#top">TOP</a>
 
     <h5 class="page_h5">org.eclipse.birt.chart.device.swt(2.3.1.v20080731)</h5>
 
@@ -198,15 +217,33 @@ function scrollToElement(element) {
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/org.eclipse.epf.common.txt">About</a><br>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
+    <h5 class="page_h5">org.eclipse.epf.common (1.2.0.v20160708)</h5>
+
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/eclipse/org.eclipse.epf.common_1.2.0.v20160708.zip">Modified Source</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/org.eclipse.epf.common.txt">About</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
+
     <h5 class="page_h5">org.eclipse.epf.richtext (1.2.0.v20100310)</h5>
 
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.epf.richtext_1.2.0.v20100310.zip">Modified Source</a><br>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/org.eclipse.epf.richtext.txt">About</a><br>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
+    <h5 class="page_h5">org.eclipse.epf.richtext (1.2.0.v20160708)</h5>
+
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/eclipse/org.eclipse.epf.richtext_1.2.0.v20160708.zip">Modified Source</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/org.eclipse.epf.richtext.txt">About</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
+
     <h5 class="page_h5">org.eclipse.epf.ui (1.2.0.v20100310)</h5>
 
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/eclipse/org.eclipse.epf.ui_1.2.0.v20100310.zip">Modified Source</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/org.eclipse.epf.ui.txt">About</a><br>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
+
+    <h5 class="page_h5">org.eclipse.epf.ui (1.2.0.v20160708)</h5>
+
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/eclipse/org.eclipse.epf.ui_1.2.0.v20160708.zip">Modified Source</a><br>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/org.eclipse.epf.ui.txt">About</a><br>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
@@ -265,21 +302,21 @@ function scrollToElement(element) {
     <br/><br/>
 
     <h2 id="epl" class="page_h2">Other EPL Code</h2>
-    <a class="home" onClick="scrollToElement('home');">TOP</a>
+    <a class="home" href="#top">TOP</a>
 
     <h5 class="page_h5">Tasktop Base Application</h5>
 
-    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/233ebb3a2ed6fead6ba26dd6fc66840248a931ad/src/epl/com.tasktop.base.application.ui_1.1.3.zip">Source</a><br/>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/epl/com.tasktop.base.application.ui_1.1.5.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
     <h5 class="page_h5">Tasktop EPL Commons</h5>
 
-    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.epl.commons.core_3.0.0.zip">Source</a><br/>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/epl/com.tasktop.epl.commons.core_3.0.0.20160708.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
     <h5 class="page_h5">Eclipse EPF</h5>
 
-    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/777a04b9c69d8b12cb35f2897c97446ed3ae084d/src/epl/com.tasktop.org.eclipse.epf_1.2.5.zip">Source</a><br/>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/epl/com.tasktop.org.eclipse.epf_1.2.5.20160708.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
     <h5 class="page_h5">Mylyn - FillWidthLayout</h5>
@@ -289,7 +326,7 @@ function scrollToElement(element) {
 
     <h5 class="page_h5">Mylyn - HTTP Commons</h5>
 
-    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/com.tasktop.mylyn.commons.http.core_1.0.3.zip">Source</a><br/>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/epl/com.tasktop.mylyn.commons.http.core_1.0.3.20160708.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
     <h5 class="page_h5">Mylyn - HtmlStreamTokenizer</h5>
@@ -304,12 +341,12 @@ function scrollToElement(element) {
 
     <h5 class="page_h5">Mylyn - OSLC</h5>
 
-    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/com.tasktop.mylyn.oslc_3.11.0.zip">Source</a><br/>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/epl/com.tasktop.mylyn.oslc_3.11.0.20160708.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
     <h5 class="page_h5">Mylyn - SOAP Commons</h5>
 
-    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/aed7ab7108e18059fd5d5bec8beb08cb22f1b37e/src/epl/com.tasktop.mylyn.commons.soap_3.11.0.zip">Source</a><br/>
+    <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/56ae24315677a82f0aeb717c926ed4d03c5fd26f/src/epl/com.tasktop.mylyn.commons.soap_3.11.0.20160708.zip">Source</a><br/>
     <a id="custom_a" href="https://github.com/Tasktop/code.modifications/raw/0ea665a3ee32a6557037fd4943b5b936c97d10f7/src/about/epl-v10.txt">Eclipse Public License 1.0</a>
 
     <h5 class="page_h5">Mylyn - TaskEditorPeoplePart</h5>
